@@ -167,7 +167,7 @@ a.mini-bento-card:hover .mini-cta{opacity:1}
 .timeline-connector{width:32px;height:1px;background:var(--surface-border);flex-shrink:0}
 
 /* === PROJECTS GRID (landing page) === */
-.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px}
 .project-card{background:var(--surface);border:1px solid var(--surface-border);border-radius:12px;padding:32px;transition:border-color .3s,transform .3s}
 .project-card:hover{border-color:var(--surface-hover);transform:translateY(-2px)}
 .project-card-title{font-size:18px;font-weight:600;margin-bottom:8px}
@@ -176,6 +176,22 @@ a.mini-bento-card:hover .mini-cta{opacity:1}
 .tag{font-size:12px;padding:4px 10px;border-radius:980px;background:rgba(255,255,255,.06);color:var(--text-secondary)}
 .project-card-link{font-size:14px;color:var(--accent-cyan);display:inline-flex;align-items:center;gap:6px;transition:opacity .2s}
 .project-card-link:hover{opacity:.7}
+
+
+
+/* === IMPACT + POSITIONING === */
+.impact-section{min-height:auto;padding-top:72px;padding-bottom:40px}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.impact-card{background:var(--surface);border:1px solid var(--surface-border);border-radius:14px;padding:22px}
+.impact-value{font-size:clamp(28px,3vw,38px);font-weight:700;letter-spacing:-.02em;color:var(--accent-cyan);margin-bottom:6px}
+.impact-title{font-size:14px;font-weight:600;line-height:1.4;margin-bottom:8px}
+.impact-text{font-size:13px;color:var(--text-secondary);line-height:1.6}
+
+.think-section{min-height:auto;padding-top:40px;padding-bottom:72px}
+.think-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.think-card{background:linear-gradient(135deg,rgba(162,89,255,.06),rgba(34,211,238,.04));border:1px solid rgba(162,89,255,.2);border-radius:14px;padding:24px}
+.think-card h3{font-size:18px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px}
+.think-card p{font-size:14px;color:var(--text-secondary);line-height:1.65}
 
 /* === 2-COLUMN ACCORDION === */
 .accordion-2col{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:32px}
@@ -333,6 +349,8 @@ a.mini-bento-card:hover .mini-cta{opacity:1}
   .timeline{flex-wrap:wrap;gap:8px;justify-content:flex-start}
   .timeline-connector{display:none}
   .section{padding:80px 0}
+  .impact-grid{grid-template-columns:repeat(2,1fr)}
+  .think-grid{grid-template-columns:1fr}
   .page-header{padding:100px 0 60px}
   .story{padding:60px 0}
   .project-detail{padding:60px 0}
@@ -340,6 +358,7 @@ a.mini-bento-card:hover .mini-cta{opacity:1}
 }
 
 @media(max-width:480px){
+  .impact-grid{grid-template-columns:1fr}
   .hero-title{font-size:clamp(32px,8vw,48px)}
   .section-title{font-size:clamp(24px,5vw,36px)}
 }
