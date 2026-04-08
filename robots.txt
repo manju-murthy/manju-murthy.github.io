@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://manjumurthy.com/sitemap.xml
+
+# Important pages
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+
+# Block unnecessary files
+Disallow: /.git/
+Disallow: /README.md
+Disallow: /*.log
